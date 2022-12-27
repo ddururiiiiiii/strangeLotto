@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>StrangeLotto</title>
+<style>
+   input {
+       width : 50px;
+   }
+</style>
+<script src="https://code.jquery.com/jquery-latest.min.js">
+</script>
+</head>
+<body>
+<div style="width: 33%; float: left; background-color: #e1f1e7;">
+	<h1>선기책임님 : </h1>
+	    <div style="text-align: center;">
+	        1. <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	    </div>
+	    <br>
+	    <div style="text-align: center;">
+	        2. <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	    </div>
+	    <br>
+	    <div style="text-align: center;">
+	        3. <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	    </div>
+	    <br>
+	    <div style="text-align: center;">
+	        4. <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	    </div>
+	    <br>
+	    <div style="text-align: center;">
+	        5. <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	        <input name='sungi' type="input" maxlength="2"/>
+	    </div>
+	    <br>
+	    <button type="button" id="firstBtn">중복제거하기</button>
+		<br><br>
+			선기 책임이 선택한 숫자는
+			<span id="sungiResult" style="color: red;"></span>
+			입니다.
+</div>
+<div style="width: 33%; float: left; background-color: #cfdd8e;">
+	<h1>영주 : </h1>
+	    <div style="text-align: center;">
+	        1. <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	    </div>
+	    <br>
+	    <div style="text-align: center;">
+	        2. <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	    </div>
+	    <br>
+	    <div style="text-align: center;">
+	        3. <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	    </div>
+	    <br>
+	    <div style="text-align: center;">
+	        4. <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	    </div>
+	    <br>
+	   <div style="text-align: center;">
+	        5. <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	        <input name='youngju' type="input" maxlength="2"/>
+	    </div>
+	    <br>
+	    <button type="button" id="secoundBtn">중복제거하기</button>
+		<br><br>
+			영주가 선택한 숫자는
+			<span id="youngjuResult" style="color: red;"></span>
+			입니다.
+</div>
+<div style="width: 33%; float: left; background-color: #e4beb3;">
+	<h1>원선임님 : </h1>
+	    <div style="text-align: center;">
+	        1. <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	    </div>
+	    <br>
+	   <div style="text-align: center;">
+	        2. <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	    </div>
+	    <br>
+	    <div style="text-align: center;">
+	        3. <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	    </div>
+	    <br>
+	    <div style="text-align: center;">
+	        4. <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	    </div>
+	    <br>
+	    <div style="text-align: center;">
+	        5. <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	        <input name='won' type="input" maxlength="2"/>
+	    </div>
+	    <br>
+	    <button type="button" id="thirdBtn">중복제거하기</button>
+		<br><br>
+			원선임님의 선택한 숫자는
+			<span id="wonResult" style="color: red;"></span>
+			입니다.	
+</div>			
+
+<!-- 1번 알고리즘  -->
+<div style="width: 25%; background-color: #3C6255; float: left;">
+	<br><br>
+	<h3>1. 선기책임님 - (원선임님 + 영주) 의 조합 : </h3>
+	<button type="button" id="finalBtn1">확인하기</button>
+	<br><br>
+	최종 번호는 <span id="finalResult1"style="color: red;"></span>
+	입니다.
+</div>
+
+<!-- 2번 알고리즘  -->
+<div style="width: 25%; background-color: #61876E; float: left;">
+	<br><br>
+	<h3>2. 선기책임님 - (원선임님 + 영주) + 3명 중복 의 조합 : </h3>
+	<button type="button" id="finalBtn2">확인하기</button>
+	<br><br>
+	최종 번호는 <span id="finalResult2"style="color: red;"></span>
+	입니다.
+</div>
+
+<!-- 3번 알고리즘  -->
+<div style="width: 25%; background-color: #A6BB8D; float: left;">
+	<br><br>
+	<h3>3. 선기책임 - 영주 : </h3>
+	<button type="button" id="finalBtn3">확인하기</button>
+	<br><br>
+	최종 번호는 <span id="finalResult3"style="color: red;"></span>
+	입니다.
+</div>
+
+<!-- 4번 알고리즘  -->
+<div style="width: 25%; background-color: #EAE7B1; float: left;">
+	<br><br>
+	<h3>4. 선기책임 - 원선임 : </h3>
+	<button type="button" id="finalBtn4">확인하기</button>
+	<br><br>
+	최종 번호는 <span id="finalResult4"style="color: red;"></span>
+	입니다.
+</div>
+
+
+</body>
+<script>
+
+//숫자 입력 제한.
+/* $("input[type=input]").keyup(function(){
+	
+	if($(this).val() == 0 || $(this).val() > 65){
+		alert("숫자는 1~65까지 입력 가능합니다.");
+		$(this).val("");
+		$(this).focus();
+	}
+}); */
+
+$("input[type=input]").keydown(function(){
+
+});
+
+let sungiUniqueArr = [];
+let youngjuUniqueArr = [];
+let wonUniqueArr = [];
+let finalArr1 = [];
+let finalArr2 = [];
+
+//선기책임 중복 제거
+$('#firstBtn').click(function(){
+	
+	let sungiArr = [];
+	
+	$("input[name=sungi]").each(function(index, item){
+		
+        if ($(item).val() != ""){
+        	sungiArr.push($(item).val());
+        }
+      });
+	
+	const set = new Set(sungiArr);
+
+	sungiUniqueArr = [...set]; 
+	
+	console.log("선기책임 중복제거 : " + sungiUniqueArr);
+	$("#sungiResult").html("" + sungiUniqueArr);
+});
+
+//영주 중복 제거
+$('#secoundBtn').click(function(){
+	
+	let youngjuArr = [];
+	
+	$("input[name=youngju]").each(function(index, item){
+		
+        if ($(item).val() != ""){
+        	youngjuArr.push($(item).val());
+        }
+      });
+	
+	const set = new Set(youngjuArr);
+
+	youngjuUniqueArr = [...set]; 
+	
+	console.log("영주 중복제거 : " + youngjuUniqueArr);
+	$("#youngjuResult").html("" + youngjuUniqueArr);
+});
+
+
+//원선임님 중복 제거
+$('#thirdBtn').click(function(){
+	
+	let wonArr = [];
+	
+	$("input[name=won]").each(function(index, item){
+		
+      if ($(item).val() != ""){
+    	  wonArr.push($(item).val());
+      }
+    });
+	
+	const set = new Set(wonArr);
+
+	wonUniqueArr = [...set]; 
+	
+	console.log("원선임 중복제거 : " + wonUniqueArr);
+	$("#wonResult").html("" + wonUniqueArr);
+});
+
+
+let sunYoungArr1 = [];
+
+//1번 조합 
+$("#finalBtn1").click(function(){
+	
+	sunYoungArr1 = sungiUniqueArr.filter(x => !youngjuUniqueArr.includes(x));
+	console.log(sunYoungArr1);
+	finalArr1 = sunYoungArr1.filter(y => !wonUniqueArr.includes(y));
+	console.log("1. 선기책임님 - (원선임님 + 영주) 의 조합" + finalArr1);
+	$("#finalResult1").html("" + finalArr1);
+});
+
+let sunYoungArr2 = [];
+let finalArr3 = [];
+
+//2번 조합 
+$("#finalBtn2").click(function(){
+	
+	//선기 책임~영주 중복 숫자 배열
+	sunYoungArr2 = sungiUniqueArr.filter(x => youngjuUniqueArr.includes(x));
+	console.log("선기책임 + 영주 중복 : " + sunYoungArr2);
+	
+	//(선기책임,영주 중복 숫자) + 원선임 중복 숫자
+	finalArr2 = sunYoungArr2.filter(y => wonUniqueArr.includes(y));
+	console.log("2. 선기책임+영주+원선임 중복 : " + finalArr2);
+	
+	for(var i = 0; i < finalArr2.length; i++){
+		finalArr1.push(finalArr2[i]);
+	}
+	
+	const set = new Set(finalArr1);
+
+	finalArr3 = [...set]; 
+	finalArr3 = finalArr3.sort();
+	
+	console.log("선기책임님 - (원선임님 + 영주) + 3명 중복 : " + finalArr3);
+	
+	$("#finalResult2").html("" + finalArr3);
+});
+
+let finalArr4 = [];
+
+//3번 조합 : 선기책임 - 영주
+$("#finalBtn3").click(function(){
+	
+	finalArr4 = sungiUniqueArr.filter(x => !youngjuUniqueArr.includes(x));
+	finalArr4 = finalArr4.sort();
+	console.log("선기책임 - 영주 : " + finalArr4);
+	$("#finalResult3").html("" + finalArr4);
+});
+
+let finalArr5 = [];
+
+//4번 조합 : 선기책임 - 원선임
+$("#finalBtn4").click(function(){
+	
+	finalArr5 = sungiUniqueArr.filter(x => !wonUniqueArr.includes(x));
+	finalArr5 = finalArr5.sort();
+	console.log("선기책임 - 원선임 : " + finalArr5);
+	$("#finalResult4").html("" + finalArr5);
+});
+
+</script>
+</html>
