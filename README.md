@@ -17,6 +17,8 @@
      <li>HTML, Javascript, CSS</li>
  </ul>
 <br>
+<h2>구현화면</h2>
+<img src="https://blog.kakaocdn.net/dn/nGgX9/btrUh1J1UDT/NxgZfL95t9Psq9hmvwqwc1/img.png">
 <br>
 <h2>개발일지</h2>
  <ul>
